@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel reservation form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="container">
+        <fieldset class="display">
+            <h1>Travel reservation form</h1>
+            <p class="desc">* denotes mandatory</p>
+            <label for="">Full name*:</label>
+            <input type="text" name="name" id="name" required placeholder="Firstname Lastname">
+            <label for="">Email address*:</label>
+            <input type="email" name="email" id="" required placeholder="Email_address">
+            <label for="">Select tour package*:</label>
+            <select name="package" id="" required>
+                <option value="0">Goa</option>
+                <option value="1">Option 2</option>
+                <option value="2">Option 3</option>
+            </select>
+            <label for="date">Arrival date*:</label>
+            <input type="date" name="date" id="date" required>
+            <label for="">Number of persons*:</label>
+            <input type="number" required min="3" max="100">
+            <div class="checkboxOuter">
+                <p class="m-0">What would u want to avail:*</p>
+                <p class="m-0">Checkbox required болгож чадахгүй байна.</p>
+                <div class="checkbox">
+                    <input type="checkbox" name="choice" id="board" required>
+                    <label for="board">Boarding</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="choice" id="food">
+                    <label for="food">Fooding</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="choice" id="see">
+                    <label for="see">Sight seeing</label>
+                </div>
+            </div>
+            <label for="">Discount Coupon Code*:</label>
+            <input type="text" maxlength="6" required>
+            <div>
+                <p class="m-0">Terms and conditions*</p>
+                <div class="radio">
+                    <input type="radio" name="term" id="yes" required>
+                    <label for="yes" aria-required="true">Yes</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="term" id="no">
+                    <label for="no">No</label>
+                </div>
+            </div>
+            <input type="submit" name="" id="" value="Complete reservation">
+        </fieldset>
+    </form>
+    
+</body>
+</html>

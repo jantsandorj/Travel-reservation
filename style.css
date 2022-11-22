@@ -1,0 +1,42 @@
+.container{
+    max-width: 560px;
+    width: 100%;
+    margin: auto;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input, select{
+    width: 50%;
+}
+div{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+}
+.desc{
+    font-weight: 600;
+    font-size: large;
+}
+.checkbox{
+    display: flex;
+    flex-direction: row;
+}
+.checkbox>input{
+    width: unset;
+}
+.radio{
+    display: flex;
+    flex-direction: row;
+}
+.radio>input{
+    width: unset;
+}
+.m-0{
+    margin: 0;
+}
+
